@@ -1,14 +1,12 @@
 import "./DisplayContainer.scss";
 import StreamDisplay from "./StreamDisplay";
+import DisplayAdjustments from "./DisplayAdjustments";
 
 const DisplayContainer = () => {
-  // Stream Display
-  // Stream Display Adjustments
-
   return (
     <div id="display-container">
-      <div>DisplayContainer</div>
       <StreamDisplay />
+      <DisplayAdjustments />
     </div>
   );
 };

@@ -1,5 +1,9 @@
 #display-container {
   border: 1px solid blue;
+  flex: 1;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+
   width: 80vw;
   height: 90vh;
 }
