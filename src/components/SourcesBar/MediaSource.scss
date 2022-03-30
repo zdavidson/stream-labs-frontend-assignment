@@ -1,0 +1,23 @@
+.media-source {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+
+  height: 36vh;
+  width: 38vh;
+  background-color: #f5f8fa;
+  border-radius: 0.5rem;
+  border: none;
+
+  p {
+    font-size: 14px;
+    color: #757575;
+  }
+}
+
+.media-source:first-child {
+  margin-right: 24px;
+}

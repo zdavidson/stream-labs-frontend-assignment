@@ -1,5 +1,4 @@
 import "./AddMediaSource.scss";
-import MediaSourceModal from "./MediaSourceModal";
 import { useModal } from "../../context/AddMediaModalContext";
 
 const AddMediaSource = ({ text, color, addText, icon }) => {

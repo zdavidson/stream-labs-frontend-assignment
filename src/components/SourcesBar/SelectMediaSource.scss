@@ -1,0 +1,14 @@
+#select-media-source {
+  height: 50vh;
+  width: 45vw;
+  background-color: white;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+
+  #media-sources {
+    display: flex;
+  }
+}

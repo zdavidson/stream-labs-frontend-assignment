@@ -1,4 +1,5 @@
 import "./MediaSourceModal.scss";
+import SelectMediaSource from "./SelectMediaSource";
 import { useModal, useShowModal } from "../../context/AddMediaModalContext";
 
 const MediaSourceModal = () => {
@@ -9,15 +10,14 @@ const MediaSourceModal = () => {
     return <div></div>;
   }
   return (
-    <div id="media-source-modal">
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          toggleModal();
-        }}
-      >
-        Close Modal
-      </button>
+    <div
+      id="media-source-modal"
+      onClick={(e) => {
+        e.preventDefault();
+        // toggleModal();
+      }}
+    >
+      <SelectMediaSource />
     </div>
   );
 };

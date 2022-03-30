@@ -1,6 +1,11 @@
 #media-source-modal {
   height: 100vh;
   width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
-  background-color: blue;
+  // background: hsla(0, 0%, 100%, 0.1);
+  background-color: rgba(128, 128, 128, 0.459);
 }
