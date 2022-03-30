@@ -11,7 +11,6 @@ const AddMediaSource = ({ text, color, addText, icon }) => {
         onClick={(e) => {
           e.preventDefault();
           toggleModal();
-          console.log("clicked");
         }}
       >
         <div className="icon">{icon}</div>
