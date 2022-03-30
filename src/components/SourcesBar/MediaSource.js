@@ -41,7 +41,7 @@ const MediaSource = ({ title, text }) => {
       navigator.mediaDevices
         .getDisplayMedia(constraints)
         .then((stream) => {
-          const video = document.querySelector("video");
+          const video = document.getElementById("side-video-screen");
           video.srcObject = stream;
           video.onloadedmetadata = function (e) {
             video.play();
