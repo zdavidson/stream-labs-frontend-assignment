@@ -1,9 +1,11 @@
 import "./MediaSource.scss";
 import { useScreenshare } from "../../context/CreateScreenshareContext";
+import { useVideoFeed } from "../../context/CreateVideoFeedContext";
 import { useModal } from "../../context/AddMediaModalContext";
 
 const MediaSource = ({ title, text }) => {
   const createScreenshare = useScreenshare();
+  const createVideoFeed = useVideoFeed();
   const toggleModal = useModal();
 
   // Media Stream
@@ -15,6 +17,11 @@ const MediaSource = ({ title, text }) => {
       .then((stream) => {
         if (title === "Screenshare") {
           createScreenshare();
+          toggleModal();
+        }
+
+        if (title === "Video Feed") {
+          createVideoFeed();
           toggleModal();
         }
 
