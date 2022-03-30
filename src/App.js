@@ -8,7 +8,11 @@ import { VideoFeedProvider } from "./context/CreateVideoFeedContext";
 // Add whether or not screenshare has been allowed to context
 // Add whether or not video feed has been allowed to context
 
-// Get modal background opacity working
+// Fix context files
+// Get small vid to duplicate on large
+// Add placeholder buttons
+// Add resizing
+// Add multiple inputs simultaneously
 
 // The stream should be a 16 x 9 aspect ratio and be responsive to the window size. The stream should be fully visible at all screen sizes.
 // You can use basic HTML elements to render the stream. You do not need to use the <canvas/> HTML element to render.

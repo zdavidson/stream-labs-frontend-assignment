@@ -15,7 +15,7 @@ const MediaSource = ({ title, text }) => {
   // Media Stream
   const askForPermission = () => {
     const constraints = {
-      audio: { echoCancellation: true, noiseSuppression: true },
+      audio: false,
       video: true,
     };
 
