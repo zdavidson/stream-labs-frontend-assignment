@@ -1,11 +1,11 @@
 import "./AddMediaSource.scss";
 import { useModal } from "../../context/AddMediaModalContext";
 
-const AddMediaSource = ({ text, color, addText, icon }) => {
+const AddMediaSource = ({ text, color, addText, icon, display }) => {
   const toggleModal = useModal();
 
   return (
-    <>
+    <div style={{ display: display }}>
       <button
         className={"add-media-source " + color}
         onClick={(e) => {
@@ -17,7 +17,7 @@ const AddMediaSource = ({ text, color, addText, icon }) => {
         {text}
         <div className="add-text">{addText}</div>
       </button>
-    </>
+    </div>
   );
 };
 

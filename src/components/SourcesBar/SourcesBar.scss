@@ -7,3 +7,40 @@
   flex-direction: column;
   align-items: center;
 }
+
+.show-hide-stream {
+  margin: 12px;
+  margin-bottom: 4px;
+  height: 8rem;
+  width: 15rem;
+
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 600;
+
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: 30px auto 30px;
+
+  box-shadow: inset 0px -10px 4px 0px black;
+
+  button {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: end;
+
+    width: 8rem;
+  }
+
+  p {
+    color: white;
+    grid-row: 3/4;
+    align-self: end;
+    justify-self: start;
+    margin-left: 8px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+  }
+}
