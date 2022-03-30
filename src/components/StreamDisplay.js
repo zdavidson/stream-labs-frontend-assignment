@@ -4,7 +4,7 @@ const StreamDisplay = () => {
   return (
     <div id="stream-display">
       <div id="video-wrapper">
-        <video autoPlay controls></video>
+        <video autoPlay></video>
       </div>
     </div>
   );

@@ -14,9 +14,12 @@ const MediaSource = ({ title, text }) => {
 
   // Media Stream
   const askForPermission = () => {
-    const constraints = { audio: true, video: true };
+    const constraints = {
+      audio: { echoCancellation: true, noiseSuppression: true },
+      video: true,
+    };
 
-    if (title === "Screenshare") {
+    if (title === "Video Feed") {
       navigator.mediaDevices
         .getUserMedia(constraints)
         .then((stream) => {
@@ -25,8 +28,8 @@ const MediaSource = ({ title, text }) => {
           video.onloadedmetadata = function (e) {
             video.play();
           };
-          setNewScreenshare(stream);
-          createScreenshare();
+          createVideoFeed();
+
           toggleModal();
         })
         .catch(function (err) {
@@ -34,7 +37,7 @@ const MediaSource = ({ title, text }) => {
         });
     }
 
-    if (title === "Video Feed") {
+    if (title === "Screenshare") {
       navigator.mediaDevices
         .getDisplayMedia(constraints)
         .then((stream) => {
@@ -43,7 +46,9 @@ const MediaSource = ({ title, text }) => {
           video.onloadedmetadata = function (e) {
             video.play();
           };
-          createVideoFeed();
+          setNewScreenshare(stream);
+          createScreenshare();
+
           toggleModal();
         })
         .catch(function (err) {

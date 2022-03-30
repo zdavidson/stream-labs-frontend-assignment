@@ -1,23 +1,19 @@
 #stream-display {
-  border: 1px solid green;
   grid-row: 2/3;
   justify-self: center;
   align-self: end;
   height: 480px;
   width: 854px;
   margin: 32px;
-  // background-color: black;
+  background-color: black;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   video {
-    max-width: 854px;
-    max-height: 480px;
+    align-self: center;
+    width: 854px;
+    height: 480px;
   }
 }
-
-// #video-wrapper {
-//   position: relative;
-//   padding-bottom: 56.25%;
-// }
