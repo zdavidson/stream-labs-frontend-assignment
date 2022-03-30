@@ -1,13 +1,23 @@
 import "./MediaSource.scss";
+import { useScreenshare } from "../../context/CreateScreenshareContext";
+import { useModal } from "../../context/AddMediaModalContext";
 
 const MediaSource = ({ title, text }) => {
+  const createScreenshare = useScreenshare();
+  const toggleModal = useModal();
+
+  // Media Stream
   const askForPermission = () => {
     const constraints = { audio: true, video: true };
 
     navigator.mediaDevices
       .getUserMedia(constraints)
-      .then(function (stream) {
-        /* use the stream */
+      .then((stream) => {
+        if (title === "Screenshare") {
+          createScreenshare();
+          toggleModal();
+        }
+
         /// if screen add one image, if video add another
         // then delay, then close modal
       })
