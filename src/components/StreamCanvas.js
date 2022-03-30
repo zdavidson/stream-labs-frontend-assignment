@@ -1,4 +1,4 @@
-import SourcesBar from "./SourcesBar";
+import SourcesBar from "./SourcesBar/SourcesBar";
 import DisplayContainer from "./DisplayContainer";
 import StreamModesBar from "./StreamModesBar";
 import "./StreamCanvas.scss";
