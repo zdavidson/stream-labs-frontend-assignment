@@ -9,15 +9,18 @@ const StreamDisplay = () => {
   const showVideoFeedLarge = useShowVideoFeedLarge();
 
   const [display, setDisplay] = useState("display1");
-
-  const assignDisplay = (button) => {
-    setDisplay(button);
-  };
+  const [size, setSize] = useState("size1");
 
   return (
     <div id="display-container">
       <div id="stream-display">
-        <div id="video-wrapper" className={display}>
+        <div
+          id="video-wrapper"
+          className={
+            size
+            // showVideoFeedLarge && showScreenshareLarge ? display : size
+          }
+        >
           <video id="large-video" className="large-video" autoPlay></video>
           <video id="small-video" className="small-video" autoPlay></video>
         </div>
@@ -28,7 +31,7 @@ const StreamDisplay = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                assignDisplay("display1");
+                setDisplay("display1");
                 console.log(display);
               }}
             >
@@ -37,7 +40,7 @@ const StreamDisplay = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                assignDisplay("display2");
+                setDisplay("display2");
                 console.log(display);
               }}
             >
@@ -46,7 +49,7 @@ const StreamDisplay = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                assignDisplay("display3");
+                setDisplay("display3");
                 console.log(display);
               }}
             >
@@ -58,6 +61,8 @@ const StreamDisplay = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
+                setSize("size1");
+                console.log(size);
               }}
             >
               Size 1
@@ -65,11 +70,21 @@ const StreamDisplay = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
+                setSize("size2");
+                console.log(size);
               }}
             >
               Size 2
             </button>{" "}
-            <button>Size 3</button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setSize("size3");
+                console.log(size);
+              }}
+            >
+              Size 3
+            </button>
           </div>
         )}
       </div>

@@ -19,6 +19,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  // Video Feed & Screenshare
   .display1 {
     .large-video {
       grid-row: 1/4;
@@ -72,6 +73,55 @@
       align-self: center;
       margin-left: 12px;
       margin-bottom: 12px;
+    }
+  }
+
+  // Video Feed
+  .size1 {
+    #video-wrapper {
+      display: flex !important;
+    }
+
+    #large-video {
+      height: 480px !important;
+      width: 854px !important;
+    }
+
+    #small-video {
+      display: none;
+    }
+  }
+
+  .size2 {
+    #video-wrapper {
+      display: flex !important;
+    }
+    #large-video {
+      height: 384px !important;
+      width: 683.2px !important;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    #small-video {
+      display: none;
+    }
+  }
+
+  .size3 {
+    #video-wrapper {
+      display: flex !important;
+    }
+
+    #large-video {
+      height: 288px !important;
+      width: 512.4px !important;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    #small-video {
+      display: none;
     }
   }
 
