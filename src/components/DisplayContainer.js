@@ -4,9 +4,9 @@ import DisplayAdjustments from "./DisplayAdjustments";
 
 const DisplayContainer = () => {
   return (
-    <div id="display-container">
+    <div>
       <StreamDisplay />
-      <DisplayAdjustments />
+      {/* <DisplayAdjustments /> */}
     </div>
   );
 };
