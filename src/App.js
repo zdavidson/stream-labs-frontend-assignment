@@ -5,7 +5,6 @@ import { ModalProvider } from "./context/AddMediaModalContext";
 import { ScreenshareProvider } from "./context/CreateScreenshareContext";
 import { VideoFeedProvider } from "./context/CreateVideoFeedContext";
 
-// Add placeholder buttons
 // Add resizing
 // Add multiple inputs simultaneously
 
