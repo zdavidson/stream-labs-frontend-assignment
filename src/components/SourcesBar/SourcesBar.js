@@ -81,7 +81,7 @@ const SourcesBar = () => {
             color={"green"}
             onClick={(e) => {
               e.preventDefault();
-              showOnStreamVideo(toggleVideoFeedLarge);
+              showOnStreamVideo(toggleVideoFeedLarge, showScreenshareLarge);
             }}
           />
         )}

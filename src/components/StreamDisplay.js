@@ -5,6 +5,7 @@ const StreamDisplay = () => {
     <div id="stream-display">
       <div id="video-wrapper">
         <video id="large-video" autoPlay></video>
+        <video id="small-video" autoPlay></video>
       </div>
     </div>
   );

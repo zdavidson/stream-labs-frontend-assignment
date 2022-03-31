@@ -6,7 +6,7 @@ const DisplayContainer = () => {
   return (
     <div id="display-container">
       <StreamDisplay />
-      {/* <DisplayAdjustments /> */}
+      <DisplayAdjustments />
     </div>
   );
 };
