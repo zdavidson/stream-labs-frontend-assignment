@@ -171,3 +171,12 @@
 img {
   height: 60px;
 }
+
+#display-adjustments {
+  height: 10vh;
+  width: 20vw;
+
+  grid-row: 3/4;
+  align-self: start;
+  justify-self: center;
+}

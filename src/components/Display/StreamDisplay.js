@@ -1,14 +1,13 @@
 import "./StreamDisplay.scss";
-import "./DisplayAdjustments.scss";
-import { useShowScreenshareLarge } from "../context/CreateScreenshareContext";
-import { useShowVideoFeedLarge } from "../context/CreateVideoFeedContext";
+import { useShowScreenshareLarge } from "../../context/CreateScreenshareContext";
+import { useShowVideoFeedLarge } from "../../context/CreateVideoFeedContext";
 import { useState } from "react";
 
-import selectedImage from "../assets/images/selected-video-feed.png";
-import unselectedImage from "../assets/images/unselected-video-feed.png";
-import display1Image from "../assets/images/display-1.png";
-import display2Image from "../assets/images/display-2.png";
-import display3Image from "../assets/images/display-3.png";
+import selectedImage from "../../assets/images/selected-video-feed.png";
+import unselectedImage from "../../assets/images/unselected-video-feed.png";
+import display1Image from "../../assets/images/display-1.png";
+import display2Image from "../../assets/images/display-2.png";
+import display3Image from "../../assets/images/display-3.png";
 
 const StreamDisplay = () => {
   const showScreenshareLarge = useShowScreenshareLarge();
