@@ -8,6 +8,9 @@ import { VideoFeedProvider } from "./context/CreateVideoFeedContext";
 // Add whether or not screenshare has been allowed to context
 // Add whether or not video feed has been allowed to context
 
+// Hide screenshare
+// Swap screenshare
+
 // Fix context files
 // Get small vid to duplicate on large
 // Add placeholder buttons
@@ -15,7 +18,6 @@ import { VideoFeedProvider } from "./context/CreateVideoFeedContext";
 // Add multiple inputs simultaneously
 
 // The stream should be a 16 x 9 aspect ratio and be responsive to the window size. The stream should be fully visible at all screen sizes.
-// You can use basic HTML elements to render the stream. You do not need to use the <canvas/> HTML element to render.
 // Users can add up to 2 images to the studio. One image will represent a video webcam feed while another image will represent a screenshare feed
 // Users can add/remove both images to the stream. The layout should auto-adjust to render the new number of images on stream. More information on this is below.
 // The positions of the images on the stream will vary depending on the number of images added. For a specific number of images, users can toggle different layouts as well.
