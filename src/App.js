@@ -5,9 +5,6 @@ import { ModalProvider } from "./context/AddMediaModalContext";
 import { ScreenshareProvider } from "./context/CreateScreenshareContext";
 import { VideoFeedProvider } from "./context/CreateVideoFeedContext";
 
-// Add resizing
-// Add multiple inputs simultaneously
-
 // The stream should be a 16 x 9 aspect ratio and be responsive to the window size. The stream should be fully visible at all screen sizes.
 // Users can add up to 2 images to the studio. One image will represent a video webcam feed while another image will represent a screenshare feed
 // Users can add/remove both images to the stream. The layout should auto-adjust to render the new number of images on stream. More information on this is below.
