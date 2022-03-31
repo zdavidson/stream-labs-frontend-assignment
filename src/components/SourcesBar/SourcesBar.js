@@ -45,7 +45,7 @@ const SourcesBar = () => {
         }}
       />
 
-      {showVideoFeed ? (
+      {showVideoFeed || showScreenshare ? (
         <div></div>
       ) : (
         <MediaSource
@@ -116,7 +116,7 @@ const SourcesBar = () => {
             color={"green"}
             onClick={(e) => {
               e.preventDefault();
-              showOnStreamScreen(toggleScreenshareLarge);
+              showOnStreamScreen(toggleScreenshareLarge, showVideoFeedLarge);
             }}
           />
         )}
