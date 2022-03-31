@@ -6,6 +6,9 @@ import { useState } from "react";
 
 import selectedImage from "../assets/images/selected-video-feed.png";
 import unselectedImage from "../assets/images/unselected-video-feed.png";
+import display1Image from "../assets/images/display-1.png";
+import display2Image from "../assets/images/display-2.png";
+import display3Image from "../assets/images/display-3.png";
 
 const StreamDisplay = () => {
   const showScreenshareLarge = useShowScreenshareLarge();
@@ -30,30 +33,30 @@ const StreamDisplay = () => {
       <div id="display-adjustments">
         {showVideoFeedLarge && showScreenshareLarge ? (
           <div id="video-and-screenshare-buttons">
-            <button
+            <img
+              alt="display1"
+              src={display1Image}
               onClick={(e) => {
                 e.preventDefault();
                 setDisplay("display1");
               }}
-            >
-              Display 1
-            </button>
-            <button
+            />
+            <img
+              alt="display2"
+              src={display2Image}
               onClick={(e) => {
                 e.preventDefault();
                 setDisplay("display2");
               }}
-            >
-              Display 2
-            </button>
-            <button
+            />
+            <img
+              alt="display3"
+              src={display3Image}
               onClick={(e) => {
                 e.preventDefault();
                 setDisplay("display3");
               }}
-            >
-              Display 3
-            </button>
+            />
           </div>
         ) : (
           <div id="video-feed-buttons">
