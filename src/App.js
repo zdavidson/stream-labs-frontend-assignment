@@ -5,10 +5,6 @@ import { ModalProvider } from "./context/AddMediaModalContext";
 import { ScreenshareProvider } from "./context/CreateScreenshareContext";
 import { VideoFeedProvider } from "./context/CreateVideoFeedContext";
 
-// Add whether or not screenshare has been allowed to context
-// Add whether or not video feed has been allowed to context
-
-// Fix context files
 // Add placeholder buttons
 // Add resizing
 // Add multiple inputs simultaneously

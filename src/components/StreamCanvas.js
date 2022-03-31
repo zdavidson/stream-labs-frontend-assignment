@@ -1,6 +1,6 @@
 import SourcesBar from "./SourcesBar/SourcesBar";
 import DisplayContainer from "./DisplayContainer";
-import StreamModesBar from "./StreamModesBar";
+import StreamModesBar from "./StreamModesBar/StreamModesBar";
 import "./StreamCanvas.scss";
 
 const StreamCanvas = () => {
