@@ -1,9 +1,12 @@
+import Button from "../Button";
 import "./StreamModesBar.scss";
 
 const StreamModesBar = () => {
   return (
     <div id="stream-modes-bar">
-      <div>StreamModesBar</div>
+      <Button text={"Chat"} color={"gray"} />
+      <Button text={"Record"} color={"gray"} />
+      <Button text={"Go Live"} color={"green"} />
     </div>
   );
 };

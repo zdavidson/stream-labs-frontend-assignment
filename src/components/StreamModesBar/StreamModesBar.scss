@@ -1,7 +1,15 @@
 #stream-modes-bar {
-  border: 1px solid red;
-  width: 40vw;
-  height: 10vh;
+  border: 2px solid #e5eaed;
+  border-bottom-style: none;
+  border-radius: 8px 8px 0px 0px;
+  width: 45vw;
+  height: 8vh;
   position: absolute;
   bottom: 0;
+
+  button {
+    height: 3rem;
+    width: 12.5rem;
+    margin: 8px;
+  }
 }
