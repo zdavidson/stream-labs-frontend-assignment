@@ -8,11 +8,7 @@ import { VideoFeedProvider } from "./context/CreateVideoFeedContext";
 // Add whether or not screenshare has been allowed to context
 // Add whether or not video feed has been allowed to context
 
-// Hide screenshare
-// Swap screenshare
-
 // Fix context files
-// Get small vid to duplicate on large
 // Add placeholder buttons
 // Add resizing
 // Add multiple inputs simultaneously

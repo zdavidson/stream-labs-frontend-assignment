@@ -1,8 +1,5 @@
 import "./MediaSource.scss";
-import {
-  useScreenshare,
-  useSetNewScreenshare,
-} from "../../context/CreateScreenshareContext";
+import { useScreenshare } from "../../context/CreateScreenshareContext";
 import { useVideoFeed } from "../../context/CreateVideoFeedContext";
 import { useModal } from "../../context/AddMediaModalContext";
 
@@ -10,7 +7,6 @@ const MediaSource = ({ title, text }) => {
   const createScreenshare = useScreenshare();
   const createVideoFeed = useVideoFeed();
   const toggleModal = useModal();
-  const setNewScreenshare = useSetNewScreenshare();
 
   // Media Stream
   const askForPermission = () => {
@@ -29,7 +25,6 @@ const MediaSource = ({ title, text }) => {
             video.play();
           };
           createVideoFeed();
-
           toggleModal();
         })
         .catch(function (err) {
@@ -46,9 +41,7 @@ const MediaSource = ({ title, text }) => {
           video.onloadedmetadata = function (e) {
             video.play();
           };
-          setNewScreenshare(stream);
           createScreenshare();
-
           toggleModal();
         })
         .catch(function (err) {
