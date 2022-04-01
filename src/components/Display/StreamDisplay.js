@@ -29,7 +29,7 @@ const StreamDisplay = () => {
           <video id="small-video" className="small-video" autoPlay></video>
         </div>
       </div>
-      {showVideoFeedLarge || showScreenshareLarge ? (
+      {showVideoFeedLarge ? (
         <div id="display-adjustments">
           {showVideoFeedLarge && showScreenshareLarge ? (
             <div id="video-and-screenshare-buttons">
