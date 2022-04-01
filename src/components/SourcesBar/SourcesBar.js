@@ -72,7 +72,7 @@ const SourcesBar = () => {
             color={"white"}
             onClick={(e) => {
               e.preventDefault();
-              hideOnStream(toggleVideoFeedLarge);
+              hideOnStream(toggleVideoFeedLarge, "video", showScreenshareLarge);
             }}
           />
         ) : (
@@ -107,7 +107,11 @@ const SourcesBar = () => {
             color={"white"}
             onClick={(e) => {
               e.preventDefault();
-              hideOnStream(toggleScreenshareLarge, showVideoFeedLarge);
+              hideOnStream(
+                toggleScreenshareLarge,
+                "screen",
+                showVideoFeedLarge
+              );
             }}
           />
         ) : (
