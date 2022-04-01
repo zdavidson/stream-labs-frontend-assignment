@@ -25,7 +25,7 @@ const SourcesBar = () => {
   const toggleVideoFeedLarge = useSetShowVideoFeedLarge();
   const showScreenshareLarge = useShowScreenshareLarge();
   const toggleScreenshareLarge = useSetShowScreenshareLarge();
-
+  console.log(showVideoFeedLarge);
   const toggleModal = useModal();
   let mediaDisplay = "inline";
 
@@ -107,7 +107,7 @@ const SourcesBar = () => {
             color={"white"}
             onClick={(e) => {
               e.preventDefault();
-              hideOnStream(toggleScreenshareLarge);
+              hideOnStream(toggleScreenshareLarge, showVideoFeedLarge);
             }}
           />
         ) : (

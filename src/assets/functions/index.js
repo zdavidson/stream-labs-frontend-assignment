@@ -36,8 +36,16 @@ export const showOnStreamScreen = (toggleFunction, videofeedStatus) => {
   }
 };
 
-export const hideOnStream = (toggleFunction) => {
-  const newElement = document.getElementById("large-video");
-  newElement.srcObject = null;
-  toggleFunction();
+export const hideOnStream = (toggleFunction, videofeedStatus) => {
+  if (!videofeedStatus) {
+    const newElement = document.getElementById("large-video");
+    newElement.srcObject = null;
+    toggleFunction();
+  } else {
+    const playbackElement = document.getElementById("side-video");
+    const captureStream = playbackElement.captureStream();
+    const newElement = document.getElementById("large-video");
+    newElement.srcObject = captureStream;
+    toggleFunction();
+  }
 };
