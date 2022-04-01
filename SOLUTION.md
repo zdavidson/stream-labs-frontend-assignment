@@ -1,20 +1,27 @@
-- How long did it take you to complete this assignment?
-  About 6 hours in total.
+###### How long did it take you to complete this assignment?
 
-- What about this assignment did you find most challenging?
-  Working with the API was probably the most challenging since I wasn't familiar with it prior to this assignment.
+About 6 hours in total.
 
-- What about this assignment did you find unclear?
-  I wasn't clear on whether images were to be used or if I was meant to utilize the MediaStream's API to enable the camera, so I made the assumption that the goal was to use the API as completely as possible and implemented that functionality.
+###### What about this assignment did you find most challenging?
 
-- What challenges did you face that you did not expect?
-  I didn't expect that getting the stream to appear in two places simultaneously would prove to be such a challenge, but I studied the documentation and found an answer.
+Working with the API was probably the most challenging aspect since I wasn't familiar with it prior to this assignment.
 
-- Do you feel like this assignment has an appropriate level of difficulty?
-  Yes, and I think if I were familiar with the MediaStream API it would have been completed in half the time.
+###### What about this assignment did you find unclear?
 
-- Briefly explain your decisions to use tools, frameworks and libraries like React, Vue, etc.
-  I decided to use React because it's the library that I'm most familiar with and would therefore save the most time by using. I chose to use SCSS because I prefer the structure of the styling -- I think it comes out much cleaner than CSS. I also decided to use Context for a similar reason.
+I wasn't clear on whether images were to be used or if I was meant to utilize the MediaStream's API to enable the camera, so I made the assumption that the goal was to use the API as completely as possible and implemented that functionality.
 
-- Did you make certain assumptions and decisions around the UI/UX? Please elaborate on your reasonings.
-  I made the assumption that the majority of users would be using this on 13 to 15 inch laptops and optimzed for those screen sizes.
+###### What challenges did you face that you did not expect?
+
+I didn't expect that getting the stream to appear in two places simultaneously would prove to be such a challenge, but I studied the documentation and found an answer.
+
+###### Do you feel like this assignment has an appropriate level of difficulty?
+
+Yes, and I think if I were familiar with the MediaStream API it would have been completed much faster.
+
+###### Briefly explain your decisions to use tools, frameworks and libraries like React, Vue, etc.
+
+I decided to use React because it's the library that I'm most familiar with and would therefore save the most time by using. I chose to use SCSS because I prefer the structure of the styling -- I think it comes out much cleaner than CSS. I also decided to use Context for a similar reason.
+
+###### Did you make certain assumptions and decisions around the UI/UX? Please elaborate on your reasonings.
+
+I made the assumption that the majority of users would be using this on laptops in and around the 13 to 15 inch range and optimzed for those screen sizes.
